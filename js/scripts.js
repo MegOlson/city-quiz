@@ -8,11 +8,23 @@ $(document).ready(function() {
 
       if (!question1, !question2, !question3) {
         alert("Please fill out all questions");
-      } else {
+      }
+      else {
         if (question1 === "outdoor activities" && question2 === "warm and sunny" && question3 === "seafood") {
           $(".croatia").show();
           $("form").hide();
-        } else if (question === "sightsee")
       }
+        else if (question1 === "sightsee" && question2 === "mild" && question3 === "hearty food: a lot of meat and bread") {
+            $(".england").show();
+            $(".form").hide();
+      }
+        else if (question1 === "act like a local" && question2 === "i don't care" && question3 === "fresh fruits and vegetables are really important") {
+            $(".france").show();
+            $(".form").hide();
+        }
+        else {
+            alert("stay home");
+          }
+        }
   });
 });
